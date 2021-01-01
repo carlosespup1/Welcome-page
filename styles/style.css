@@ -1,0 +1,175 @@
+:root {
+
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: var(--violet);
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+}
+
+header {
+
+    width: 100%;
+    height:  80px;
+    position: relative;
+}
+
+header > img {
+
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 200px;
+}
+
+.main {
+
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+}
+
+.illustration {
+
+    display: flex;
+
+}
+
+.illustration > img{
+
+    width: 85%;
+    height: auto;
+    max-width: 735px;
+    position: relative;
+    margin: auto;
+}
+
+.infotext {
+
+    font-family: 'Poppins';
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.infotext h2 {
+
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.infotext p {
+
+    font-weight: 200;
+    padding-top: 13px;
+}
+
+.register {
+
+    width: 250px;
+    height:  50px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    color: var(--violet);
+    border: none;
+    border-radius: 37px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 22px;
+    transition: 0.7s;
+}
+
+.register:hover {
+
+    color: #fff;
+    background-color: var(--soft-magenta);
+}
+
+footer {
+
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: calc(100%);
+}
+
+.social {
+
+    width: 100%;
+    height: 80px;
+    font-size: 32px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social i{
+
+    padding: 11px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.social i:hover {
+
+    color: var(--soft-magenta);
+}
+
+/*breakpoints*/
+
+@media screen and (min-width: 767px) {
+
+    .main {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body {
+
+        background-image: url("../images/bg-desktop.svg");
+        background-repeat: repeat;
+    }
+
+    .infotext {
+
+        text-align: left;
+    }
+
+    .infotext > h2 {
+
+        font-size: 33px;
+    }
+
+    .infotext > p {
+
+        font-size: 18px;
+    }
+
+    .social {
+
+        justify-content: flex-end;
+        position: relative;
+        right: 40px;
+    }
+}

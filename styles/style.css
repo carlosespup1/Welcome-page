@@ -111,7 +111,8 @@ footer {
     display: flex;
     align-items: flex-end;
     position: relative;
-    top: calc(100%);
+    margin-top: 30px;
+    bottom: 0;
 }
 
 .social {

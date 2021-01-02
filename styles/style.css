@@ -61,6 +61,8 @@ header > img {
 
 .infotext {
 
+    width: 100%;
+    max-height: 300px;
     font-family: 'Poppins';
     color: #fff;
     padding-top: 30px;
